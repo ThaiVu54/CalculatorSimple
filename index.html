@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <style>
+        table {
+            background-color: darkturquoise;
+            margin: auto;
+        }
+        #result{
+            width: 190px;
+        }
+        .btn{
+            width: 36px;
+            height: 32px;
+        }
+        .btn:hover{
+            background-color: chartreuse;
+            cursor: auto;
+        }
+        h1 {
+            margin-left: 395px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Calculator</h1>
+<table>
+    <tr>
+        <td colspan="5"><input type="text" id="result"></td>
+<!--        <td rowspan="2"><input style="height: 60px" type="button" class="btn" value="DEL" onclick="result.value=result.value.substr(0,result.value.length-1)"/></td>-->
+    </tr>
+    <tr>
+        <td><input type="button" class="btn" value="1" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="2" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="3" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="+" onclick="result.value+=this.value"/></td>
+        <td rowspan=""><input style="" type="button" class="btn" value="DEL" onclick="result.value=result.value.substr(0,result.value.length-1)"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="btn" value="4" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="5" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="6" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="-" onclick="result.value+=this.value"/></td>
+        <td rowspan="3"><input style="height: 104px" type="button" class="btn" value="=" onclick="result.value=eval(result.value)"/></td>
+    </tr>
+    <tr>
+        <td><input type="button" class="btn" value="7" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="8" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="9" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="*" onclick="result.value+=this.value"/></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input style="width: 78px" type="button" class="btn" value="0" onclick="result.value+=this.value"/></td>
+        <td><input type="button" class="btn" value="C" onclick="result.value=''"/></td>
+        <td><input type="button" class="btn" value="/" onclick="result.value+=this.value"/></td>
+
+    </tr>
+</table>
+</body>
+</html>
